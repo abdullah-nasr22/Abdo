@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task</title>
+    <style>
+      body {
+        background-color: rgba(2, 2, 36, 0.919);
+      }
+      .inp {
+        background-color: rgba(215, 233, 244, 0.988);
+        width: 500px;
+        height: 700px;
+        margin-left: 500px;
+        border-radius: 20px;
+        padding-top: 0%;
+        padding-bottom: 0%;s
+      }
+      p {
+        color: rgb(26, 26, 186);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: large;
+        margin-bottom: 0%;
+      }
+      input {
+        margin-top: 0%;
+        padding: 3px;
+        border-radius: 5px;
+        /* width: 100%; */
+      }
+      .hed {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(25, 92, 218, 0.707);
+        margin-top: 0%;
+        /* padding-top: 1px; */
+        padding-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .tab{
+        padding: 30px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+      }
+      .foot{
+        width: 100%;
+        height: 40px;
+        background-color: rgba(25, 92, 218, 0.707);
+        margin-top: 0%;
+        /* padding-top: 1px; */
+        padding-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inp">
+      <div class="hed"><h1 style="text-align: center">Create Account</h1></div>
+      <div class="tab">
+        <table>
+          <tr>
+            <td>
+              <p>Frist Name*</p>
+              <input type="text" required placeholder="Enter Your Frist Name" />
+            </td>
+            <td>
+              <p>Last Name*</p>
+              <input type="text" required placeholder="Enter Your Last Name" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Email*</p>
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                required
+                style="width: 100%"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Password*</p>
+              <input type="text" required placeholder="Enter Your Password" />
+            </td>
+            <td>
+              <p>Confirm Password*</p>
+              <input
+                type="text"
+                required
+                placeholder="Enter Your password again"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Gender:</p>
+              <input id="rad1" type="radio" name="rad" />
+              <label for="rad1">Male</label>
+              <input id="rad2" type="radio" name="rad" />
+              <label for="rad2">Female</label>
+            </td>
+            <td>
+              <p>Hobbies</p>
+              <input id="check1" type="checkbox" value="music" name="hob_1" />
+              <label for="check1">Music</label>
+              <input id="check2" type="checkbox" value="sports" name="hob_2" />
+              <label for="check2">Sports</label>
+              <input id="check3" type="checkbox" value="travel" name="hob_3" />
+              <label for="check3">Travel</label>
+              <input id="check4" type="checkbox" value="movies" name="hob_4" />
+              <label for="check4">Movies</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="src"> Source of income</label><br />
+              <select id="src">
+                <option value="0">Employed</option>
+                <option value="1">unemployed</option>
+              </select>
+            </td>
+            <td>
+              <p>income</p>
+              <input type="range" min="0k" max="20k" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fil">Upload Profile Picture</label>
+              <input type="file" id="fil" value="Browser" />
+            </td>
+            <td>
+              <p>Age</p>
+              <input type="number" value="20" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Bio</p>
+              <textarea
+                style="resize: none"
+                id="txt_Notes"
+                rows="8"
+                cols="57"
+                maxlength="10"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="foot">
+        <span style="margin-left: 10px; line-break: loose">*required</span>
+        <button
+          type="submit"
+          style="
+            margin-left: 400px;
+            font-size: large;
+            color: rgb(161, 161, 205);
+            border-radius: 10px;
+            background-color: rgb(7, 7, 70);
+          "
+        >
+          Create
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
